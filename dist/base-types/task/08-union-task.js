@@ -1,11 +1,5 @@
-type Level = "junior" | "middle" | "senior";
-
-export interface Developer {
-  name: string;
-  skills: string[];
-  level: Level;
-}
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 // function gradeDeveloper(developLevel: Level) {
 //   switch (developLevel) {
 //     case "junior":
@@ -18,17 +12,13 @@ export interface Developer {
 //       return developLevel;
 //   }
 // }
-
-function gradeDeveloper(user: Developer, newLevel: Level) {
-  user.level = newLevel;
+function gradeDeveloper(user, newLevel) {
+    user.level = newLevel;
 }
-
-const dev1: Developer = {
-  level: "junior",
-  name: "bob",
-  skills: [],
+const dev1 = {
+    level: "junior",
+    name: "bob",
+    skills: [],
 };
-
 gradeDeveloper(dev1, "middle");
-
 console.log(dev1);

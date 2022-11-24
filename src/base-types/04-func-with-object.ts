@@ -18,7 +18,10 @@ const obj2: IPrintPointProp = {
   y: "200",
 };
 
-function printName(user: { firstName: string; lastName?: string }): void {
+export function printName(user: {
+  firstName: string;
+  lastName?: string;
+}): void {
   console.log("Hello", user.firstName.toLocaleUpperCase());
   if (user.lastName) {
     console.log("Last name", user.lastName.toLocaleUpperCase());

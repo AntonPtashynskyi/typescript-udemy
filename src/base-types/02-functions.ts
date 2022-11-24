@@ -1,4 +1,4 @@
-function sum(a: number, b: number) {
+export function sum(a: number, b: number) {
   return a + b;
 }
 const sum2 = (a: number, b: number) => a + b;
@@ -16,7 +16,7 @@ function crash(): never {
   throw new Error("Error");
 }
 
-function average(...numb: number[]) {
+export function average(...numb: number[]) {
   const sum = numb.reduce((current, total) => current + total, 0);
   return sum / numb.length;
 }
